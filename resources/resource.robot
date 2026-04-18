@@ -4,7 +4,7 @@ Library        SeleniumLibrary
 
 *** Variables ***
 ${BROWSER}        chrome
-${URL}            https://ticket-box.s3.eu-central-1.amazonaws.com/index.html
+${URL}            https://blog.agibank.com.br/institucional/
 
 
 *** Keywords ***
@@ -12,4 +12,5 @@ Abrir navegador
     Open Browser    ${URL}    ${BROWSER}  
 
 Fechar navegador
+    Capture Page Screenshot
     Close Browser
