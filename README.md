@@ -70,6 +70,15 @@ Os relatórios serão gerados na pasta `logs/`.
 - Os elementos das páginas são mapeados em arquivos separados para facilitar manutenção.
 - Os passos (steps) são reutilizáveis entre diferentes cenários.
 
+**Importante:**
+Para rodar os testes localmente com interface gráfica, altere a variável `${BROWSER}` no arquivo `resources/resource.robot` para `chrome`:
+
+```
+${BROWSER}        chrome
+```
+
+Por padrão, o projeto está configurado para rodar em modo `headlesschrome` (sem interface gráfica), ideal para pipelines CI/CD.
+
 ## Estrutura dos Testes
 Veja exemplos em `tests/Teste-agi.robot`:
 
