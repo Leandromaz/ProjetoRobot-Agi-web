@@ -1,0 +1,35 @@
+name: Robot Framework Tests
+
+description: Executa os testes do projeto Robot Framework no GitHub Actions
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependências
+        run: |
+          pip install -r requirements.txt
+          pip install robotframework-seleniumlibrary
+          sudo apt-get update && sudo apt-get install -y chromium-browser
+      - name: Rodar testes Robot Framework
+        env:
+          ROBOT_BROWSER: chromium
+        run: |
+          robot -d ./logs tests
+      - name: Publicar relatórios
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs
+          path: logs/

@@ -42,8 +42,16 @@ ProjetoRobot/
 
 ## Como Executar
 
-1. Instale as dependências necessárias (Python, Robot Framework, SeleniumLibrary, navegador Chrome).
-2. Execute os testes com o comando:
+
+1. Instale as dependências necessárias (Python e navegador Chrome).
+2. Instale as bibliotecas do projeto com:
+
+```
+pip install -r requirements.txt
+```
+
+3. Execute os testes com o comando:
+
 
 ```
 robot -d ./logs tests
