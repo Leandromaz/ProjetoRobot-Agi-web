@@ -1,6 +1,6 @@
 *** Variables ***
 
-${LINK_AGI_BLOG}                     xpath=//a[@href='https://blog.agibank.com.br/']
+${LINK_AGI_BLOG}                     xpath=(//a[@href="https://blog.agibank.com.br/" and not(contains(@style,'display:none'))])[1]
 ${LINK_CALCULADORA}                  xpath=//a[@href='https://blog.agibank.com.br/calculadora/']
 ${LINK_CALCULADORA_DIAS_UTEIS}       xpath=//a[@href='https://blog.agibank.com.br/calculadora-dias-uteis/']
 ${TITULO_CALCULADORA_DIAS_UTEIS}     xpath=//h1[contains(@class,'entry-title') and normalize-space()='Calculadora de Dias Úteis Online e Gratuita']
