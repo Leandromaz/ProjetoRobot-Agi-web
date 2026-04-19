@@ -1,0 +1,5 @@
+# Ignorar arquivos e pastas de logs
+logs/
+log.html
+output.xml
+report.html
