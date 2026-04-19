@@ -1,6 +1,5 @@
 *** Variables ***
 
-${NOME_HOME}                         xpath=//a[.//span[normalize-space()='O Agibank']]
 ${LINK_AGI_BLOG}                     xpath=//a[@href='https://blog.agibank.com.br/']
 ${LINK_CALCULADORA}                  xpath=//a[@href='https://blog.agibank.com.br/calculadora/']
 ${LINK_CALCULADORA_DIAS_UTEIS}       xpath=//a[@href='https://blog.agibank.com.br/calculadora-dias-uteis/']

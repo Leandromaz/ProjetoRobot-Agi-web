@@ -3,7 +3,7 @@
 Resource    ../pages/PageCalculadoraJurosCompostos.robot
 Resource    ../steps/generic.robot
 Library   SeleniumLibrary
-Library    String
+
 
 *** Keywords ***
 

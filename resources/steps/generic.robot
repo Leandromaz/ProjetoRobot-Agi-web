@@ -6,16 +6,14 @@ Library    String
 
 *** Keywords ***
 Dado que eu estou na pagina inicial do blog
-       Wait until element is visible    ${NOME_HOME}  3s   
+       Wait until element is visible    ${LINK_AGI_BLOG}  3s   
        Click Element    ${LINK_AGI_BLOG}
        
-
 Scroll com iframe
     [Arguments]   ${elemnto_iframe}    ${elemento_visivel}
     Select Frame    ${elemnto_iframe}     
     Scroll Element Into View         ${elemento_visivel} 
     Wait until element is visible    ${elemento_visivel}   
-
 
 Quando eu clicar no botao calcular
     Click Button  ${BOTAO_CALCULAR_AGORA}

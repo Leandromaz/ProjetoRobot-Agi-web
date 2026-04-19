@@ -3,7 +3,7 @@
 Resource    ../pages/PageCalculadoraDiasUteis.robot
 Resource    ../steps/generic.robot
 Library    SeleniumLibrary
-Library    String
+
 
 *** Keywords ***
 
@@ -20,8 +20,7 @@ E prechoo os campos necessários para calcular os dias úteis
         Click Element    ${INCLUIR_SABADO}
         Click Element    ${INCLUIR_DOMINGO}
          END
-   
-            
+
 Entao mostre o resultado do calculo de dias úteis       
        Wait Until Element Is Visible    ${RESULTADO_CALCULO_DIAS_UTEIS}    5s
        Page Should Contain Element  ${RESULTADO_CALCULO_DIAS_UTEIS}     
