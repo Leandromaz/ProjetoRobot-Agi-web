@@ -11,6 +11,9 @@ ${CAMPO_IFRAME}                      xpath=//iframe[@title='Calculadora de Dias 
 ${INCLUIR_SABADO}                    id=incluirSabado
 ${INCLUIR_DOMINGO}                   id=incluirDomingo
 ${BOTAO_CALCULAR_AGORA}              xpath=//*[contains(text(),'Calcular Agora')]
+${RESULTADO_CALCULO_DIAS_UTEIS}      xpath=//h3[contains(text(),'Resultado do Cálculo')]
+
+
 
 
 

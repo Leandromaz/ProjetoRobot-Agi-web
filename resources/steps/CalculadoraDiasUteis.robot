@@ -16,17 +16,13 @@ E prechoo os campos necessários para calcular os dias úteis
       Scroll com iframe    ${CAMPO_IFRAME}    ${CAMPO_DATA_INICIO}
       Input Text    ${CAMPO_DATA_INICIO}    ${data_inicio}
       Input Text    ${CAMPO_DATA_FIM}      ${data_fim}
-      IF  '${incluir_final_de_semana}' == 'sim' or '${incluir_final_de_semana}' == 'SIM' or '${incluir_final_de_semana}' == 'Sim'
+          IF  '${incluir_final_de_semana}' == 'sim' or '${incluir_final_de_semana}' == 'SIM' or '${incluir_final_de_semana}' == 'Sim'
         Click Element    ${INCLUIR_SABADO}
         Click Element    ${INCLUIR_DOMINGO}
-    END
-    sleep  15s
+         END
+   
             
-      
-       
-          
-         # Preencher os campos necessários para calcular os dias úteis
-         # Exemplo:
-         # Input Text    ${CAMPO_DATA_INICIAL}    01/01/2024
-         # Input Text    ${CAMPO_DATA_FINAL}      31/01/2024
-         # Click Button  ${BOTAO_CALCULAR}       
+Entao mostre o resultado do calculo de dias úteis       
+       Wait Until Element Is Visible    ${RESULTADO_CALCULO_DIAS_UTEIS}    5s
+       Page Should Contain Element  ${RESULTADO_CALCULO_DIAS_UTEIS}     
+    

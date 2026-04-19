@@ -6,7 +6,7 @@ Library    String
 
 *** Keywords ***
 Dado que eu estou na pagina inicial do blog
-       Wait until element is visible    ${NOME_HOME}    
+       Wait until element is visible    ${NOME_HOME}  3s   
        Click Element    ${LINK_AGI_BLOG}
        
 
@@ -23,5 +23,5 @@ Quando eu clicar no botao calcular
 Mouse Over na menu e clica na opção desejada
        [Arguments]   ${elemento_mouse_over}     ${elemento_desejado}
        Wait until element is visible   ${elemento_mouse_over}
-       Mouse Over    ${elemento_mouse_over}
+       Mouse Over    ${elemento_mouse_over}    
        Click Element    ${elemento_desejado}      
