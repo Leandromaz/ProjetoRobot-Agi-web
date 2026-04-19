@@ -3,7 +3,7 @@ Library        SeleniumLibrary
 
 
 *** Variables ***
-${BROWSER}        chrome
+${BROWSER}        headlesschrome
 ${URL}            https://blog.agibank.com.br/institucional/
 
 
