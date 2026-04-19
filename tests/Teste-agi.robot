@@ -20,6 +20,8 @@ Caso de testes 02: Calcular divida de juros Compostos
     E eu clico no link Calculadora Juros Compostos
     E preenchoo os campos necessários para calcular a divida de juros compostos   10000  2,50  Anual  36  Anos
     Quando eu clicar no botao calcular
+    Entao mostre o resultado do calculo de divida
+
 
 
 
