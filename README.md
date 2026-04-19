@@ -25,6 +25,7 @@ ProjetoRobot/
 ├── tests/
 │   └── Teste-agi.robot               # Casos de teste automatizados
 ├── logs/                             # Resultados de execução
+├── requirements.txt                  # Dependências do projeto
 ├── README.md                         # Este arquivo
 ```
 
