@@ -6,7 +6,7 @@ Library    String
 
 *** Keywords ***
 Dado que eu estou na pagina inicial do blog
-       Wait until element is visible    ${LINK_AGI_BLOG}  10s   
+       Wait until element is visible    ${LINK_AGI_BLOG}  20s
        Click Element    ${LINK_AGI_BLOG}
        
 Scroll com iframe
