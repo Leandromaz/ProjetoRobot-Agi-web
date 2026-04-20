@@ -32,14 +32,16 @@ ProjetoRobot/
 ## Principais Funcionalidades
 
 - **Calculadora de Dias Úteis:**
-	- Preenche datas de início e fim
-	- Permite incluir/excluir finais de semana
-	- Valida o resultado apresentado
+  - Preenche datas de início e fim
+  - Permite incluir/excluir finais de semana:
+    - No arquivo de cenários, basta informar `sim` ou `não` para incluir ou excluir sábados e domingos.
+  - Valida o resultado apresentado
 
 - **Calculadora de Juros Compostos:**
-	- Preenche valor do empréstimo, taxa de juros, período e prazo
-	- Permite alternar entre taxa mensal/anual e prazo em meses/anos
-	- Valida o resultado apresentado
+  - Preenche valor do empréstimo, taxa de juros, período e prazo
+  - Permite alternar entre taxa mensal/anual e prazo em meses/anos:
+    - No arquivo de cenários, basta informar `Mensal` ou `Anual` e `Meses` ou `Anos` conforme o exemplo.
+  - Valida o resultado apresentado
 
 ## Como Executar
 
@@ -84,7 +86,9 @@ Por padrão, o projeto está configurado para rodar em modo `headlesschrome` (se
 Veja exemplos em `tests/Teste-agi.robot`:
 
 - **Caso de Teste 1:** Calcula dias úteis entre duas datas.
+  - No cenário, basta informar `sim` ou `não` para incluir/excluir finais de semana.
 - **Caso de Teste 2:** Calcula dívida de juros compostos com diferentes parâmetros.
+  - No cenário, basta informar a unidade de prazo (`Meses` ou `Anos`) e a taxa (`Mensal` ou `Anual`).
 
 ---
 
